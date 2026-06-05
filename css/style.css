@@ -1,0 +1,740 @@
+﻿/* ===== CSS Variables ===== */
+:root {
+    --primary: #E63946;
+    --secondary: #1D3557;
+    --accent: #F4A261;
+    --bg: #F8F9FA;
+    --card-bg: #FFFFFF;
+    --text: #333333;
+    --text-light: #666666;
+    --radius: 12px;
+    --radius-sm: 8px;
+    --shadow: 0 4px 16px rgba(0,0,0,0.08);
+    --shadow-hover: 0 8px 32px rgba(0,0,0,0.15);
+    --transition: all 0.3s ease;
+    --max-width: 1200px;
+}
+
+/* ===== Reset & Base ===== */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 16px 0;
+    transition: var(--transition);
+    background: transparent;
+}
+
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    padding: 10px 0;
+}
+
+.nav-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    transition: var(--transition);
+}
+
+.navbar.scrolled .nav-logo {
+    color: var(--secondary);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.85);
+    transition: var(--transition);
+    position: relative;
+    padding: 4px 0;
+}
+
+.navbar.scrolled .nav-link {
+    color: var(--text);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+.nav-link.active {
+    color: var(--primary);
+}
+
+.navbar.scrolled .nav-link.active {
+    color: var(--primary);
+}
+
+/* Hamburger */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    transition: var(--transition);
+}
+
+.navbar.scrolled .nav-toggle span {
+    background: var(--secondary);
+}
+
+/* ===== Hero ===== */
+.hero {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('https://images.unsplash.com/photo-1590735213920-68192a487bc2?w=1920&h=1080&fit=crop') center/cover no-repeat;
+    color: #fff;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(29, 53, 87, 0.5) 0%,
+        rgba(29, 53, 87, 0.7) 50%,
+        rgba(29, 53, 87, 0.85) 100%
+    );
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 0 24px;
+}
+
+.hero-title {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    letter-spacing: 4px;
+}
+
+.hero-subtitle {
+    font-size: 22px;
+    font-weight: 400;
+    opacity: 0.9;
+    margin-bottom: 32px;
+    letter-spacing: 2px;
+}
+
+.hero-tags {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-tag {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Scroll arrow */
+.scroll-arrow {
+    position: absolute;
+    bottom: 40px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255,255,255,0.8);
+    animation: bounce 2s infinite;
+}
+
+.arrow-text {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.arrow-icon {
+    font-size: 24px;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
+/* ===== Sections ===== */
+.section {
+    padding: 100px 0;
+}
+
+.section-food {
+    background: #FFF8F0;
+}
+
+.section-tips {
+    background: var(--bg);
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--secondary);
+    margin-bottom: 12px;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    color: var(--text-light);
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* ===== Spot Cards ===== */
+.spot-card {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 60px;
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.spot-card:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-4px);
+}
+
+.spot-card.reverse {
+    flex-direction: row-reverse;
+}
+
+.spot-image {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.spot-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.spot-card:hover .spot-image img {
+    transform: scale(1.05);
+}
+
+.spot-info {
+    flex: 1;
+    padding: 36px 40px;
+    min-width: 0;
+}
+
+.spot-badge {
+    display: inline-block;
+    background: var(--primary);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 4px 14px;
+    border-radius: 50px;
+    margin-bottom: 12px;
+}
+
+.spot-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--secondary);
+    margin-bottom: 4px;
+}
+
+.spot-name-en {
+    font-size: 13px;
+    color: var(--text-light);
+    margin-bottom: 12px;
+}
+
+.spot-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.stars {
+    font-size: 14px;
+}
+
+.rating-text {
+    font-size: 13px;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.spot-desc {
+    font-size: 15px;
+    color: var(--text);
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.spot-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.meta-tag {
+    display: inline-block;
+    background: #F0F4F8;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    white-space: nowrap;
+}
+
+.spot-tip {
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+    background: #FFF0F0;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border-left: 3px solid var(--primary);
+}
+
+/* ===== Food Grid ===== */
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.food-card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.food-card:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-4px);
+}
+
+.food-image {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+
+.food-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.food-card:hover .food-image img {
+    transform: scale(1.05);
+}
+
+.food-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: var(--primary);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 50px;
+}
+
+.food-info {
+    padding: 20px;
+}
+
+.food-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--secondary);
+    margin-bottom: 8px;
+}
+
+.food-desc {
+    font-size: 14px;
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.food-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+.food-tag {
+    font-size: 13px;
+    color: var(--text);
+}
+
+.food-spice, .food-rating {
+    font-size: 13px;
+    color: var(--text);
+    margin-bottom: 4px;
+}
+
+/* ===== Tips Grid ===== */
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.tip-card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 32px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.tip-card:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-4px);
+}
+
+.tip-icon {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.tip-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--secondary);
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #F0F4F8;
+}
+
+.tip-list li {
+    font-size: 14px;
+    color: var(--text);
+    padding: 6px 0;
+    line-height: 1.7;
+    border-bottom: 1px dashed #F0F4F8;
+}
+
+.tip-list li:last-child {
+    border-bottom: none;
+}
+
+.tip-list li strong {
+    color: var(--secondary);
+}
+
+/* ===== Footer ===== */
+.footer {
+    background: var(--secondary);
+    color: #fff;
+    padding: 48px 0;
+    text-align: center;
+}
+
+.footer-content {
+    position: relative;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.footer-text {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-bottom: 8px;
+}
+
+.footer-copyright {
+    font-size: 13px;
+    opacity: 0.5;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(230, 57, 70, 0.4);
+    transition: var(--transition);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(230, 57, 70, 0.5);
+}
+
+/* ===== Scroll Animations ===== */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-on-scroll.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== Responsive ===== */
+
+/* Tablet */
+@media (max-width: 1023px) {
+    .hero-title {
+        font-size: 42px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .spot-card,
+    .spot-card.reverse {
+        flex-direction: column;
+    }
+
+    .spot-info {
+        padding: 24px;
+    }
+
+    .food-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tips-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 260px;
+        height: 100vh;
+        background: var(--secondary);
+        flex-direction: column;
+        padding: 80px 32px 32px;
+        gap: 20px;
+        transition: right 0.3s ease;
+        box-shadow: -4px 0 20px rgba(0,0,0,0.2);
+    }
+
+    .nav-menu.open {
+        right: 0;
+    }
+
+    .nav-menu .nav-link {
+        color: rgba(255,255,255,0.85);
+        font-size: 18px;
+    }
+
+    .nav-menu .nav-link.active {
+        color: var(--primary);
+    }
+
+    .hero-title {
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .hero-tags {
+        gap: 8px;
+    }
+
+    .hero-tag {
+        font-size: 13px;
+        padding: 6px 14px;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-subtitle {
+        margin-bottom: 40px;
+    }
+
+    .spot-card,
+    .spot-card.reverse {
+        flex-direction: column;
+    }
+
+    .spot-info {
+        padding: 20px;
+    }
+
+    .spot-name {
+        font-size: 20px;
+    }
+
+    .spot-meta {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .food-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tip-card {
+        padding: 24px;
+    }
+
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
+    }
+}

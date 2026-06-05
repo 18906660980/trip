@@ -1,0 +1,564 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="成都旅游攻略 - 十大热门景点与必吃美食详细指南，包含大熊猫基地、宽窄巷子、锦里等景点攻略及火锅、串串等地道美食推荐">
+    <meta name="keywords" content="成都旅游, 成都攻略, 成都景点, 成都美食, 火锅, 大熊猫, 宽窄巷子, 锦里, 武侯祠">
+    <title>游在成都 - 十大热门景点美食攻略</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== 顶部导航栏 ===== -->
+<header class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="#hero" class="nav-logo">🐼 游在成都</a>
+        <button class="nav-toggle" id="navToggle" aria-label="菜单">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="nav-menu" id="navMenu">
+            <a href="#hero" class="nav-link active">首页</a>
+            <a href="#spots" class="nav-link">景点推荐</a>
+            <a href="#food" class="nav-link">美食攻略</a>
+            <a href="#tips" class="nav-link">实用贴士</a>
+        </nav>
+    </div>
+</header>
+
+<!-- ===== Hero 大图区 ===== -->
+<section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1 class="hero-title">游在成都 · 十大必打卡</h1>
+        <p class="hero-subtitle">一座来了就不想走的城市</p>
+        <div class="hero-tags">
+            <span class="hero-tag">🐼 大熊猫</span>
+            <span class="hero-tag">🌶️ 火锅</span>
+            <span class="hero-tag">🏯 古镇</span>
+            <span class="hero-tag">🍵 茶馆</span>
+        </div>
+    </div>
+    <a href="#spots" class="scroll-arrow" aria-label="向下滚动">
+        <span class="arrow-text">探索更多</span>
+        <span class="arrow-icon">↓</span>
+    </a>
+</section>
+
+<!-- ===== 景点推荐区 ===== -->
+<section class="section" id="spots">
+    <div class="container">
+        <h2 class="section-title">🔥 热门景点推荐</h2>
+        <p class="section-subtitle">成都十大必打卡景点，每一个都值得你驻足停留</p>
+
+        <!-- 景点 1：大熊猫繁育研究基地 -->
+        <div class="spot-card animate-on-scroll" data-delay="0">
+            <div class="spot-image">
+                <img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=800&h=500&fit=crop" alt="大熊猫" loading="lazy" width="800" height="500">
+            </div>
+            <div class="spot-info">
+                <div class="spot-badge">No.1</div>
+                <h3 class="spot-name">大熊猫繁育研究基地</h3>
+                <p class="spot-name-en">Chengdu Research Base of Giant Panda Breeding</p>
+                <div class="spot-rating">
+                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                    <span class="rating-text">推荐指数 5.0</span>
+                </div>
+                <p class="spot-desc">全球最大的大熊猫人工繁育基地，这里生活着两百余只憨态可掬的大熊猫。清晨是最佳观赏时间，可以看到小熊猫宝宝喝奶的萌态。</p>
+                <div class="spot-meta">
+                    <span class="meta-tag">📍 成都市成华区熊猫大道1375号</span>
+                    <span class="meta-tag">🕐 08:00-18:00</span>
+                    <span class="meta-tag">💰 ¥55</span>
+                    <span class="meta-tag">⏱️ 建议游玩 3-4 小时</span>
+                </div>
+                <p class="spot-tip">💡 小贴士：建议早上 8 点前到达，避开人流高峰，还能看到熊猫吃早餐。</p>
+            </div>
+        </div>
+
+        <!-- 景点 2：宽窄巷子 -->
+        <div class="spot-card animate-on-scroll reverse" data-delay="100">
+            <div class="spot-image">
+                <img src="https://images.unsplash.com/photo-1590735213920-68192a487bc2?w=800&h=500&fit=crop" alt="宽窄巷子" loading="lazy" width="800" height="500">
+            </div>
+            <div class="spot-info">
+                <div class="spot-badge">No.2</div>
+                <h3 class="spot-name">宽窄巷子</h3>
+                <p class="spot-name-en">Kuanzhai Alley</p>
+                <div class="spot-rating">
+                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                    <span class="rating-text">推荐指数 5.0</span>
+                </div>
+                <p class="spot-desc">成都最具代表性的历史街区，由宽巷子、窄巷子、井巷子三条平行老街组成。青砖黛瓦的四合院里藏着茶馆、小吃和文创店，是体验老成都生活的绝佳去处。</p>
+                <div class="spot-meta">
+                    <span class="meta-tag">📍 成都市青羊区宽窄巷子</span>
+                    <span class="meta-tag">🕐 全天开放</span>
+                    <span class="meta-tag">💰 免费</span>
+                    <span class="meta-tag">⏱️ 建议游玩 2-3 小时</span>
+                </div>
+                <p class="spot-tip">💡 小贴士：夜景别有一番风味，建议傍晚前往，既能逛街又能赏夜景。</p>
+            </div>
+        </div>
+
+        <!-- 景点 3：锦里古街 -->
+        <div class="spot-card animate-on-scroll" data-delay="200">
+            <div class="spot-image">
+                <img src="https://images.unsplash.com/photo-1528164344705-47542687000d?w=800&h=500&fit=crop" alt="锦里古街" loading="lazy" width="800" height="500">
+            </div>
+            <div class="spot-info">
+                <div class="spot-badge">No.3</div>
+                <h3 class="spot-name">锦里古街</h3>
+                <p class="spot-name-en">Jinli Ancient Street</p>
+                <div class="spot-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-text">推荐指数 4.0</span>
+                </div>
+                <p class="spot-desc">号称"西蜀第一街"，紧邻武侯祠，全长 550 米。街道两旁是仿古建筑，汇聚了各色小吃、手工艺品和民俗表演，夜晚红灯笼高挂，古韵十足。</p>
+                <div class="spot-meta">
+                    <span class="meta-tag">📍 成都市武侯区锦里</span>
+                    <span class="meta-tag">🕐 全天开放（夜景更佳）</span>
+                    <span class="meta-tag">💰 免费</span>
+                    <span class="meta-tag">⏱️ 建议游玩 2-3 小时</span>
+                </div>
+                <p class="spot-tip">💡 小贴士：可以和武侯祠一起游览，锦里小吃价格偏高，建议浅尝即可。</p>
+            </div>
+        </div>
+
+        <!-- 景点 4：武侯祠 -->
+        <div class="spot-card animate-on-scroll reverse" data-delay="100">
+            <div class="spot-image">
+                <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=800&h=500&fit=crop" alt="武侯祠" loading="lazy" width="800" height="500">
+            </div>
+            <div class="spot-info">
+                <div class="spot-badge">No.4</div>
+                <h3 class="spot-name">武侯祠</h3>
+                <p class="spot-name-en">Wuhou Shrine</p>
+                <div class="spot-rating">
+                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                    <span class="rating-text">推荐指数 5.0</span>
+                </div>
+                <p class="spot-desc">中国唯一的君臣合祀祠庙，纪念三国时期蜀汉丞相诸葛亮。红墙竹影间的古建筑群庄严肃穆，是三国迷的朝圣地，也是了解蜀汉文化的最佳去处。</p>
+                <div class="spot-meta">
+                    <span class="meta-tag">📍 成都市武侯区武侯祠大街231号</span>
+                    <span class="meta-tag">🕐 08:00-18:00</span>
+                    <span class="meta-tag">💰 ¥50</span>
+                    <span class="meta-tag">⏱️ 建议游玩 1.5-2 小时</span>
+                </div>
+                <p class="spot-tip">💡 小贴士：红墙竹影是最经典的拍照点，建议穿汉服来更有氛围感。</p>
+            </div>
+        </div>
+
+        <!-- 景点 5：杜甫草堂 -->
+        <div class="spot-card animate-on-scroll" data-delay="200">
+            <div class="spot-image">
+                <img src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?w=800&h=500&fit=crop" alt="杜甫草堂" loading="lazy" width="800" height="500">
+            </div>
+            <div class="spot-info">
+                <div class="spot-badge">No.5</div>
+                <h3 class="spot-name">杜甫草堂</h3>
+                <p class="spot-name-en">Du Fu Thatched Cottage</p>
+                <div class="spot-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-text">推荐指数 4.0</span>
+                </div>
+                <p class="spot-desc">唐代大诗人杜甫流寓成都时的故居，园内亭台楼阁、古木参天，处处充满诗意。茅屋景区还原了杜甫笔下"茅屋为秋风所破歌"的场景，文化底蕴深厚。</p>
+                <div class="spot-meta">
+                    <span class="meta-tag">📍 成都市青羊区青华路37号</span>
+                    <span class="meta-tag">🕐 08:00-18:00</span>
+                    <span class="meta-tag">💰 ¥50</span>
+                    <span class="meta-tag">⏱️ 建议游玩 1.5-2 小时</span>
+                </div>
+                <p class="spot-tip">💡 小贴士：每年春节期间有盛大的梅花节，是成都人赏梅的首选地。</p>
+            </div>
+        </div>
+
+        <!-- 景点 6：春熙路 / IFS -->
+        <div class="spot-card animate-on-scroll reverse" data-delay="100">
+            <div class="spot-image">
+                <img src="https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=800&h=500&fit=crop" alt="春熙路IFS" loading="lazy" width="800" height="500">
+            </div>
+            <div class="spot-info">
+                <div class="spot-badge">No.6</div>
+                <h3 class="spot-name">春熙路 / IFS</h3>
+                <p class="spot-name-en">Chunxi Road / IFS International Finance Square</p>
+                <div class="spot-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-text">推荐指数 4.0</span>
+                </div>
+                <p class="spot-desc">成都最繁华的商业中心，被称为"西南第一大道"。IFS 楼顶的巨型爬墙大熊猫雕塑是成都新地标，集购物、美食、潮流于一体，是感受成都现代都市魅力的好去处。</p>
+                <div class="spot-meta">
+                    <span class="meta-tag">📍 成都市锦江区春熙路商圈</span>
+                    <span class="meta-tag">🕐 全天开放</span>
+                    <span class="meta-tag">💰 免费</span>
+                    <span class="meta-tag">⏱️ 建议游玩 2-3 小时</span>
+                </div>
+                <p class="spot-tip">💡 小贴士：一定要去 IFS 7 楼拍爬墙熊猫，旁边有很多网红餐厅可以打卡。</p>
+            </div>
+        </div>
+
+        <!-- 景点 7：成都人民公园 -->
+        <div class="spot-card animate-on-scroll" data-delay="200">
+            <div class="spot-image">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=500&fit=crop" alt="人民公园" loading="lazy" width="800" height="500">
+            </div>
+            <div class="spot-info">
+                <div class="spot-badge">No.7</div>
+                <h3 class="spot-name">成都人民公园</h3>
+                <p class="spot-name-en">People's Park of Chengdu</p>
+                <div class="spot-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-text">推荐指数 4.0</span>
+                </div>
+                <p class="spot-desc">成都人最地道的休闲生活缩影。百年鹤鸣茶社里竹椅一坐、盖碗茶一端，便是最正宗的成都慢生活。公园内绿树成荫，菊花展、相亲角等充满市井烟火气。</p>
+                <div class="spot-meta">
+                    <span class="meta-tag">📍 成都市青羊区少城路12号</span>
+                    <span class="meta-tag">🕐 全天开放</span>
+                    <span class="meta-tag">💰 免费</span>
+                    <span class="meta-tag">⏱️ 建议游玩 1-2 小时</span>
+                </div>
+                <p class="spot-tip">💡 小贴士：鹤鸣茶社的盖碗茶只要十几元，坐一下午体验成都人的"巴适"。</p>
+            </div>
+        </div>
+
+        <!-- 景点 8：都江堰 -->
+        <div class="spot-card animate-on-scroll reverse" data-delay="100">
+            <div class="spot-image">
+                <img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=800&h=500&fit=crop" alt="都江堰" loading="lazy" width="800" height="500">
+            </div>
+            <div class="spot-info">
+                <div class="spot-badge">No.8</div>
+                <h3 class="spot-name">都江堰</h3>
+                <p class="spot-name-en">Dujiangyan Irrigation System</p>
+                <div class="spot-rating">
+                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                    <span class="rating-text">推荐指数 5.0</span>
+                </div>
+                <p class="spot-desc">世界文化遗产，两千多年前由李冰父子主持修建的大型水利工程，至今仍灌溉着成都平原。鱼嘴分水堤、飞沙堰溢洪道、宝瓶口三大主体工程令人叹为观止。</p>
+                <div class="spot-meta">
+                    <span class="meta-tag">📍 成都都江堰市灌口镇</span>
+                    <span class="meta-tag">🕐 08:00-18:00</span>
+                    <span class="meta-tag">💰 ¥80</span>
+                    <span class="meta-tag">⏱️ 建议游玩半天</span>
+                </div>
+                <p class="spot-tip">💡 小贴士：可与青城山安排在同一天，建议先游都江堰再爬青城山。</p>
+            </div>
+        </div>
+
+        <!-- 景点 9：青城山 -->
+        <div class="spot-card animate-on-scroll" data-delay="200">
+            <div class="spot-image">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&h=500&fit=crop" alt="青城山" loading="lazy" width="800" height="500">
+            </div>
+            <div class="spot-info">
+                <div class="spot-badge">No.9</div>
+                <h3 class="spot-name">青城山</h3>
+                <p class="spot-name-en">Mount Qingcheng</p>
+                <div class="spot-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-text">推荐指数 4.0</span>
+                </div>
+                <p class="spot-desc">中国道教发源地之一，素有"青城天下幽"之美誉。山中古木参天、云雾缭绕，前山以道教文化为主，后山自然风光更胜，是修身养性的绝佳之地。</p>
+                <div class="spot-meta">
+                    <span class="meta-tag">📍 成都都江堰市青城山镇</span>
+                    <span class="meta-tag">🕐 08:00-17:30</span>
+                    <span class="meta-tag">💰 ¥80（前山）</span>
+                    <span class="meta-tag">⏱️ 建议游玩半天至一天</span>
+                </div>
+                <p class="spot-tip">💡 小贴士：体力一般建议走前山，可坐索道上下；喜欢徒步选后山，风景更原始。</p>
+            </div>
+        </div>
+
+        <!-- 景点 10：东郊记忆 -->
+        <div class="spot-card animate-on-scroll reverse" data-delay="100">
+            <div class="spot-image">
+                <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&h=500&fit=crop" alt="东郊记忆" loading="lazy" width="800" height="500">
+            </div>
+            <div class="spot-info">
+                <div class="spot-badge">No.10</div>
+                <h3 class="spot-name">东郊记忆</h3>
+                <p class="spot-name-en">Dong郊 Memory</p>
+                <div class="spot-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-text">推荐指数 4.0</span>
+                </div>
+                <p class="spot-desc">由原国营红光电子管厂改造而成的文创园区，工业风建筑与现代艺术碰撞出独特火花。涂鸦墙、音乐现场、创意市集、复古火车头，文艺青年的拍照天堂。</p>
+                <div class="spot-meta">
+                    <span class="meta-tag">📍 成都市成华区二环东外侧建设南支路4号</span>
+                    <span class="meta-tag">🕐 全天开放</span>
+                    <span class="meta-tag">💰 免费</span>
+                    <span class="meta-tag">⏱️ 建议游玩 1-2 小时</span>
+                </div>
+                <p class="spot-tip">💡 小贴士：周末有创意市集和 livehouse 演出，适合下午过来逛拍。</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===== 美食攻略区 ===== -->
+<section class="section section-food" id="food">
+    <div class="container">
+        <h2 class="section-title">🍜 必吃美食攻略</h2>
+        <p class="section-subtitle">来成都不吃这十样东西，等于白来一趟</p>
+
+        <div class="food-grid">
+
+            <!-- 美食 1：火锅 -->
+            <div class="food-card animate-on-scroll" data-delay="0">
+                <div class="food-image">
+                    <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=600&h=400&fit=crop" alt="成都火锅" loading="lazy" width="600" height="400">
+                    <span class="food-badge">必吃 TOP1</span>
+                </div>
+                <div class="food-info">
+                    <h3 class="food-name">🍲 火锅</h3>
+                    <p class="food-desc">成都名片，牛油红锅是灵魂。九宫格翻滚的红油里，毛肚七上八下、黄喉脆嫩爽口，配上一碗冰粉，就是最地道的成都味道。</p>
+                    <div class="food-meta">
+                        <span class="food-tag">📍 小龙坎 / 大龙燚 / 蜀大侠</span>
+                        <span class="food-tag">💰 人均 ¥80-150</span>
+                    </div>
+                    <div class="food-spice">辣度：<span>🌶️🌶️🌶️🌶️</span></div>
+                    <div class="food-rating">必吃指数：<span>⭐⭐⭐⭐⭐</span></div>
+                </div>
+            </div>
+
+            <!-- 美食 2：串串香 -->
+            <div class="food-card animate-on-scroll" data-delay="100">
+                <div class="food-image">
+                    <img src="https://images.unsplash.com/photo-1555126634-323283e090fa?w=600&h=400&fit=crop" alt="串串香" loading="lazy" width="600" height="400">
+                    <span class="food-badge">必吃 TOP2</span>
+                </div>
+                <div class="food-info">
+                    <h3 class="food-name">🍢 串串香</h3>
+                    <p class="food-desc">竹签串万物，成都街头的烟火气担当。荤素搭配自选，蘸上干碟或油碟，边涮边聊，三五好友围坐一桌，巴适得板。</p>
+                    <div class="food-meta">
+                        <span class="food-tag">📍 马路边边 / 钢管厂五区</span>
+                        <span class="food-tag">💰 人均 ¥40-80</span>
+                    </div>
+                    <div class="food-spice">辣度：<span>🌶️🌶️🌶️</span></div>
+                    <div class="food-rating">必吃指数：<span>⭐⭐⭐⭐⭐</span></div>
+                </div>
+            </div>
+
+            <!-- 美食 3：担担面 -->
+            <div class="food-card animate-on-scroll" data-delay="200">
+                <div class="food-image">
+                    <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=600&h=400&fit=crop&q=80" alt="担担面" loading="lazy" width="600" height="400">
+                    <span class="food-badge">必吃 TOP3</span>
+                </div>
+                <div class="food-info">
+                    <h3 class="food-name">🍜 担担面</h3>
+                    <p class="food-desc">麻辣鲜香的经典小面，面条细薄劲道，浇上肉臊子、花生碎和红油，拌匀后每一根面都裹满酱汁，一碗下肚回味无穷。</p>
+                    <div class="food-meta">
+                        <span class="food-tag">📍 甘食记 / 陈麻婆豆腐</span>
+                        <span class="food-tag">💰 人均 ¥12-20</span>
+                    </div>
+                    <div class="food-spice">辣度：<span>🌶️🌶️🌶️</span></div>
+                    <div class="food-rating">必吃指数：<span>⭐⭐⭐⭐</span></div>
+                </div>
+            </div>
+
+            <!-- 美食 4：龙抄手 -->
+            <div class="food-card animate-on-scroll" data-delay="100">
+                <div class="food-image">
+                    <img src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?w=600&h=400&fit=crop" alt="龙抄手" loading="lazy" width="600" height="400">
+                    <span class="food-badge">必吃 TOP4</span>
+                </div>
+                <div class="food-info">
+                    <h3 class="food-name">🥟 龙抄手</h3>
+                    <p class="food-desc">薄皮大馅的经典成都抄手，红油抄手是招牌中的招牌。皮薄如纸，馅鲜味美，淋上红油辣子，麻辣鲜香一应俱全。</p>
+                    <div class="food-meta">
+                        <span class="food-tag">📍 龙抄手（总府路总店）</span>
+                        <span class="food-tag">💰 人均 ¥15-30</span>
+                    </div>
+                    <div class="food-spice">辣度：<span>🌶️🌶️</span></div>
+                    <div class="food-rating">必吃指数：<span>⭐⭐⭐⭐</span></div>
+                </div>
+            </div>
+
+            <!-- 美食 5：钟水饺 -->
+            <div class="food-card animate-on-scroll" data-delay="200">
+                <div class="food-image">
+                    <img src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?w=600&h=400&fit=crop&q=80" alt="钟水饺" loading="lazy" width="600" height="400">
+                    <span class="food-badge">必吃 TOP5</span>
+                </div>
+                <div class="food-info">
+                    <h3 class="food-name">🥟 钟水饺</h3>
+                    <p class="food-desc">红油浇汁的甜辣水饺，与北方水饺截然不同的风味。纯猪肉馅，皮薄馅嫩，淋上特制红油和蒜泥汁，甜中带辣，辣中带香。</p>
+                    <div class="food-meta">
+                        <span class="food-tag">📍 钟水饺（总府路总店）</span>
+                        <span class="food-tag">💰 人均 ¥15-25</span>
+                    </div>
+                    <div class="food-spice">辣度：<span>🌶️🌶️</span></div>
+                    <div class="food-rating">必吃指数：<span>⭐⭐⭐⭐</span></div>
+                </div>
+            </div>
+
+            <!-- 美食 6：麻婆豆腐 -->
+            <div class="food-card animate-on-scroll" data-delay="0">
+                <div class="food-image">
+                    <img src="https://images.unsplash.com/photo-1582452919408-aca4f7d37f2e?w=600&h=400&fit=crop" alt="麻婆豆腐" loading="lazy" width="600" height="400">
+                    <span class="food-badge">必吃 TOP6</span>
+                </div>
+                <div class="food-info">
+                    <h3 class="food-name">🌶️ 麻婆豆腐</h3>
+                    <p class="food-desc">陈氏传承百年的经典川菜，麻辣烫鲜嫩七字诀缺一不可。嫩滑的豆腐配上牛肉末和花椒粉，下饭神器中的战斗机。</p>
+                    <div class="food-meta">
+                        <span class="food-tag">📍 陈麻婆豆腐（西玉龙街总店）</span>
+                        <span class="food-tag">💰 人均 ¥30-50</span>
+                    </div>
+                    <div class="food-spice">辣度：<span>🌶️🌶️🌶️🌶️</span></div>
+                    <div class="food-rating">必吃指数：<span>⭐⭐⭐⭐⭐</span></div>
+                </div>
+            </div>
+
+            <!-- 美食 7：夫妻肺片 -->
+            <div class="food-card animate-on-scroll" data-delay="100">
+                <div class="food-image">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=400&fit=crop" alt="夫妻肺片" loading="lazy" width="600" height="400">
+                    <span class="food-badge">必吃 TOP7</span>
+                </div>
+                <div class="food-info">
+                    <h3 class="food-name">🥩 夫妻肺片</h3>
+                    <p class="food-desc">红油拌制的经典冷菜，牛肉、牛心、牛舌薄片铺盘，撒上花生碎和芝麻，麻辣鲜香，是成都人下酒下饭的最爱。</p>
+                    <div class="food-meta">
+                        <span class="food-tag">📍 夫妻肺片（总府路总店）</span>
+                        <span class="food-tag">💰 人均 ¥20-40</span>
+                    </div>
+                    <div class="food-spice">辣度：<span>🌶️🌶️</span></div>
+                    <div class="food-rating">必吃指数：<span>⭐⭐⭐⭐</span></div>
+                </div>
+            </div>
+
+            <!-- 美食 8：兔头 -->
+            <div class="food-card animate-on-scroll" data-delay="200">
+                <div class="food-image">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=400&fit=crop" alt="兔头" loading="lazy" width="600" height="400">
+                    <span class="food-badge">必吃 TOP8</span>
+                </div>
+                <div class="food-info">
+                    <h3 class="food-name">🐰 兔头</h3>
+                    <p class="food-desc">成都人的独特零食，外地人可能不敢尝试但吃过就上瘾。麻辣味和五香味最经典，啃兔头是一门需要技术的"艺术"。</p>
+                    <div class="food-meta">
+                        <span class="food-tag">📍 双流老妈兔头 / 罗记怪味兔头</span>
+                        <span class="food-tag">💰 ¥15-25/个</span>
+                    </div>
+                    <div class="food-spice">辣度：<span>🌶️🌶️🌶️</span></div>
+                    <div class="food-rating">必吃指数：<span>⭐⭐⭐⭐</span></div>
+                </div>
+            </div>
+
+            <!-- 美食 9：甜水面 -->
+            <div class="food-card animate-on-scroll" data-delay="0">
+                <div class="food-image">
+                    <img src="https://images.unsplash.com/photo-1552611052-33e04de8127a?w=600&h=400&fit=crop" alt="甜水面" loading="lazy" width="600" height="400">
+                    <span class="food-badge">必吃 TOP9</span>
+                </div>
+                <div class="food-info">
+                    <h3 class="food-name">🍝 甜水面</h3>
+                    <p class="food-desc">粗如筷子的面条配红油酱汁，甜辣交织的独特口感是成都独有的味道。面条筋道弹牙，嚼劲十足，每一口都是惊喜。</p>
+                    <div class="food-meta">
+                        <span class="food-tag">📍 甘食记 / 街边老店</span>
+                        <span class="food-tag">💰 人均 ¥10-15</span>
+                    </div>
+                    <div class="food-spice">辣度：<span>🌶️🌶️</span></div>
+                    <div class="food-rating">必吃指数：<span>⭐⭐⭐⭐</span></div>
+                </div>
+            </div>
+
+            <!-- 美食 10：冰粉 -->
+            <div class="food-card animate-on-scroll" data-delay="100">
+                <div class="food-image">
+                    <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&h=400&fit=crop" alt="冰粉" loading="lazy" width="600" height="400">
+                    <span class="food-badge">必吃 TOP10</span>
+                </div>
+                <div class="food-info">
+                    <h3 class="food-name">🍧 冰粉</h3>
+                    <p class="food-desc">夏日解辣神器，清凉爽口的消暑甜品。晶莹剔透的冰粉配上红糖水、山楂碎、花生碎、葡萄干，是火锅最佳伴侣。</p>
+                    <div class="food-meta">
+                        <span class="food-tag">📍 街边小摊 / 任何火锅店</span>
+                        <span class="food-tag">💰 人均 ¥8-15</span>
+                    </div>
+                    <div class="food-spice">辣度：<span>🌶️</span></div>
+                    <div class="food-rating">必吃指数：<span>⭐⭐⭐⭐</span></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===== 实用攻略区 ===== -->
+<section class="section section-tips" id="tips">
+    <div class="container">
+        <h2 class="section-title">📋 实用攻略</h2>
+        <p class="section-subtitle">出发前看看这些，让你的成都之行更顺利</p>
+
+        <div class="tips-grid">
+
+            <div class="tip-card animate-on-scroll" data-delay="0">
+                <div class="tip-icon">✈️</div>
+                <h3 class="tip-title">交通指南</h3>
+                <ul class="tip-list">
+                    <li><strong>双流机场</strong>：地铁 10 号线直达市区，约 30 分钟</li>
+                    <li><strong>天府机场</strong>：地铁 18 号线直达市区，约 50 分钟</li>
+                    <li><strong>地铁</strong>：已开通 13 条线路，覆盖主要景点和商圈</li>
+                    <li><strong>打车</strong>：滴滴/高德叫车方便，起步价 ¥8</li>
+                    <li><strong>共享单车</strong>：美团/哈啰遍布市区，短途首选</li>
+                </ul>
+            </div>
+
+            <div class="tip-card animate-on-scroll" data-delay="100">
+                <div class="tip-icon">🏨</div>
+                <h3 class="tip-title">住宿推荐</h3>
+                <ul class="tip-list">
+                    <li><strong>春熙路/太古里</strong>：市中心黄金位置，购物美食方便，价格 ¥200-800</li>
+                    <li><strong>宽窄巷子</strong>：古风民宿多，体验老成都氛围，价格 ¥150-500</li>
+                    <li><strong>天府广场</strong>：地铁枢纽，去哪都方便，价格 ¥150-600</li>
+                    <li><strong>建设路</strong>：小吃一条街旁边，吃货首选，价格 ¥100-300</li>
+                </ul>
+            </div>
+
+            <div class="tip-card animate-on-scroll" data-delay="200">
+                <div class="tip-icon">🌤️</div>
+                <h3 class="tip-title">最佳季节</h3>
+                <ul class="tip-list">
+                    <li><strong>春季（3-5月）</strong>：赏花踏青，气候宜人，是最舒适的季节</li>
+                    <li><strong>夏季（6-8月）</strong>：炎热多雨，但夜市和冷饮最丰富</li>
+                    <li><strong>秋季（9-11月）</strong>：秋高气爽，银杏金黄，旅游黄金季</li>
+                    <li><strong>冬季（12-2月）</strong>：阴冷少日照，但泡温泉、吃火锅正当时</li>
+                </ul>
+            </div>
+
+            <div class="tip-card animate-on-scroll" data-delay="300">
+                <div class="tip-icon">⚠️</div>
+                <h3 class="tip-title">注意事项</h3>
+                <ul class="tip-list">
+                    <li><strong>防晒</strong>：成都紫外线强，即使是阴天也要涂防晒霜</li>
+                    <li><strong>排队</strong>：热门景点和网红餐厅建议提前预约或错峰出行</li>
+                    <li><strong>辣度</strong>：点餐时可以说"微辣"或"不辣"，不要逞强</li>
+                    <li><strong>支付</strong>：微信/支付宝全覆盖，但建议备少量现金</li>
+                    <li><strong>方言</strong>：成都人热情好客，普通话完全没问题</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===== 页脚 ===== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <p class="footer-logo">🐼 游在成都</p>
+            <p class="footer-text">数据仅供参考，出行前请核实最新信息</p>
+            <p class="footer-copyright">© 2026 游在成都 · 成都旅游攻略 | Made with ❤️</p>
+        </div>
+        <button class="back-to-top" id="backToTop" aria-label="返回顶部">↑</button>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
